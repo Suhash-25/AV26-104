@@ -1,0 +1,539 @@
+{
+  "plans": {
+    "test_planner": {
+      "title": "7-day plan for Biology",
+      "week_plan": [
+        {
+          "day": "Day 1",
+          "goal": "Foundation: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "List key chapters, terms, and exam expectations",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Foundation study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 2",
+          "goal": "Core Concepts: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Study the most important concepts with examples",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Core Concepts study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 3",
+          "goal": "Diagrams and Processes: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Draw, label, and explain important diagrams or flows",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Diagrams and Processes study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 4",
+          "goal": "NCERT/Textbook Practice: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Solve textbook questions and mark weak areas",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology NCERT/Textbook Practice study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 5",
+          "goal": "Application Questions: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Practice reasoning, case-based, and assertion questions",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Application Questions study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 6",
+          "goal": "Revision: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Make short notes and revise weak topics",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Revision study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 7",
+          "goal": "Mock Test: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Take a timed test and review mistakes",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Mock Test study guide",
+          "resources": [],
+          "progress": {}
+        }
+      ]
+    },
+    "test_planner_2": {
+      "title": "7-day plan for Biology",
+      "week_plan": [
+        {
+          "day": "Day 1",
+          "goal": "Foundation: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "List key chapters, terms, and exam expectations",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Foundation study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 2",
+          "goal": "Core Concepts: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Study the most important concepts with examples",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Core Concepts study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 3",
+          "goal": "Diagrams and Processes: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Draw, label, and explain important diagrams or flows",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Diagrams and Processes study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 4",
+          "goal": "NCERT/Textbook Practice: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Solve textbook questions and mark weak areas",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology NCERT/Textbook Practice study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 5",
+          "goal": "Application Questions: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Practice reasoning, case-based, and assertion questions",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Application Questions study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 6",
+          "goal": "Revision: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Make short notes and revise weak topics",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Revision study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 7",
+          "goal": "Mock Test: Learn Class 12 Biology for board exams",
+          "tasks": [
+            "Take a timed test and review mistakes",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Mock Test study guide",
+          "resources": [],
+          "progress": {}
+        }
+      ]
+    },
+    "default_student": {
+      "title": "7-day plan for Biology",
+      "week_plan": [
+        {
+          "day": "Day 1",
+          "goal": "Foundation: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "List key chapters, terms, and exam expectations",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Foundation study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 2",
+          "goal": "Core Concepts: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "Study the most important concepts with examples",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Core Concepts study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 3",
+          "goal": "Diagrams and Processes: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "Draw, label, and explain important diagrams or flows",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Diagrams and Processes study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 4",
+          "goal": "NCERT/Textbook Practice: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "Solve textbook questions and mark weak areas",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology NCERT/Textbook Practice study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 5",
+          "goal": "Application Questions: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "Practice reasoning, case-based, and assertion questions",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Application Questions study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 6",
+          "goal": "Revision: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "Make short notes and revise weak topics",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Revision study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 7",
+          "goal": "Mock Test: Learn Biology for Class 12 Daily study time: 60-90 minutes",
+          "tasks": [
+            "Take a timed test and review mistakes",
+            "Spend 30 minutes learning Biology with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 12 Biology Mock Test study guide",
+          "resources": [],
+          "progress": {}
+        }
+      ]
+    },
+    "stu_1787572240030_krqv8wwfx": {
+      "title": "7-day plan for English",
+      "week_plan": [
+        {
+          "day": "Day 1",
+          "goal": "Foundation: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "List key chapters, terms, and exam expectations",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English Foundation study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 2",
+          "goal": "Core Concepts: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "Study the most important concepts with examples",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English Core Concepts study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 3",
+          "goal": "Diagrams and Processes: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "Draw, label, and explain important diagrams or flows",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English Diagrams and Processes study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 4",
+          "goal": "NCERT/Textbook Practice: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "Solve textbook questions and mark weak areas",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English NCERT/Textbook Practice study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 5",
+          "goal": "Application Questions: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "Practice reasoning, case-based, and assertion questions",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English Application Questions study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 6",
+          "goal": "Revision: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "Make short notes and revise weak topics",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English Revision study guide",
+          "resources": [],
+          "progress": {}
+        },
+        {
+          "day": "Day 7",
+          "goal": "Mock Test: Learn english for Class 5 in detail Daily study time: 60 minutes",
+          "tasks": [
+            "Take a timed test and review mistakes",
+            "Spend 30 minutes learning English with notes",
+            "Write 5 recall questions and answer them without looking"
+          ],
+          "time_estimate": "60-90 minutes",
+          "search_query": "Class 5 English Mock Test study guide",
+          "resources": [],
+          "progress": {}
+        }
+      ]
+    }
+  },
+  "progress": {
+    "test_planner": {
+      "Day 1": {
+        "List key chapters, terms, and exam expectations": true,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 2": {
+        "Study the most important concepts with examples": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 3": {
+        "Draw, label, and explain important diagrams or flows": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 4": {
+        "Solve textbook questions and mark weak areas": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 5": {
+        "Practice reasoning, case-based, and assertion questions": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 6": {
+        "Make short notes and revise weak topics": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 7": {
+        "Take a timed test and review mistakes": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      }
+    },
+    "test_planner_2": {
+      "Day 1": {
+        "List key chapters, terms, and exam expectations": true,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 2": {
+        "Study the most important concepts with examples": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 3": {
+        "Draw, label, and explain important diagrams or flows": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 4": {
+        "Solve textbook questions and mark weak areas": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 5": {
+        "Practice reasoning, case-based, and assertion questions": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 6": {
+        "Make short notes and revise weak topics": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 7": {
+        "Take a timed test and review mistakes": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      }
+    },
+    "default_student": {
+      "Day 1": {
+        "List key chapters, terms, and exam expectations": true,
+        "Spend 30 minutes learning Biology with notes": true,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 2": {
+        "Study the most important concepts with examples": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 3": {
+        "Draw, label, and explain important diagrams or flows": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 4": {
+        "Solve textbook questions and mark weak areas": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 5": {
+        "Practice reasoning, case-based, and assertion questions": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 6": {
+        "Make short notes and revise weak topics": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 7": {
+        "Take a timed test and review mistakes": false,
+        "Spend 30 minutes learning Biology with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      }
+    },
+    "stu_1787572240030_krqv8wwfx": {
+      "Day 1": {
+        "List key chapters, terms, and exam expectations": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 2": {
+        "Study the most important concepts with examples": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 3": {
+        "Draw, label, and explain important diagrams or flows": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 4": {
+        "Solve textbook questions and mark weak areas": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 5": {
+        "Practice reasoning, case-based, and assertion questions": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 6": {
+        "Make short notes and revise weak topics": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      },
+      "Day 7": {
+        "Take a timed test and review mistakes": false,
+        "Spend 30 minutes learning English with notes": false,
+        "Write 5 recall questions and answer them without looking": false
+      }
+    }
+  },
+  "notifications": {}
+}

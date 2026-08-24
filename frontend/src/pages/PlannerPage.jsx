@@ -65,6 +65,10 @@ export default function PlannerPage() {
   const [uploading, setUploading] = useState(false)
   const [generating, setGenerating] = useState(false)
   const [resumeText, setResumeText] = useState('')
+  const [studyGoal, setStudyGoal] = useState('Learn Biology for Class 12')
+  const [classLevel, setClassLevel] = useState('Class 12')
+  const [subject, setSubject] = useState('Biology')
+  const [dailyTime, setDailyTime] = useState('60-90 minutes')
   const [uploadSuccess, setUploadSuccess] = useState(false)
   const [error, setError] = useState('')
 
@@ -114,19 +118,29 @@ export default function PlannerPage() {
 
   // ─── Generate plan ───────────────────────────────────────────────────────
   const generatePlan = async () => {
-    if (!resumeText) { setError('Please upload a resume first.'); return }
+    if (!resumeText && !studyGoal.trim()) {
+      setError('Enter a study goal or upload a resume first.')
+      return
+    }
     setGenerating(true)
     setError('')
 
     try {
-      await apiPost('/api/student/generate-plan', {
+      const generated = await apiPost('/api/student/generate-plan', {
         student_id: studentId,
         resume_text: resumeText,
+        study_goal: `${studyGoal.trim()} Daily study time: ${dailyTime.trim() || '60-90 minutes'}`,
+        class_level: classLevel.trim(),
+        subject: subject.trim(),
       })
-      const res = await apiGet(`/api/student/plan/${studentId}`)
-      if (res.plan) setPlan(res.plan)
+      if (generated.plan) {
+        setPlan(generated.plan)
+      } else {
+        const res = await apiGet(`/api/student/plan/${studentId}`)
+        if (res.plan) setPlan(res.plan)
+      }
     } catch (err) {
-      setError('Error generating plan. Please try again.')
+      setError(`Error generating plan: ${err.message || 'Please try again.'}`)
     } finally {
       setGenerating(false)
     }
@@ -253,20 +267,71 @@ export default function PlannerPage() {
 
       {!plan ? (
         /* ─── Upload Section ─── */
-        <div className="card p-8 sm:p-12 text-center">
+        <div className="card p-6 sm:p-8">
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary-500/10 border border-primary-500/20 mb-6">
             <FileText className="w-10 h-10 text-primary-500" />
           </div>
-          <h2 className="text-xl font-display font-bold text-surface-text mb-3">
+          <h2 className="text-xl font-display font-bold text-surface-text mb-3 text-center">
             Let's build your AI Plan!
           </h2>
-          <p className="text-surface-muted text-sm max-w-md mx-auto mb-8 leading-relaxed">
-            Upload your current resume in PDF format. We'll extract your skills and generate
-            a strict 7-day personalized study roadmap using Gemini AI.
+          <p className="text-surface-muted text-sm max-w-xl mx-auto mb-8 leading-relaxed text-center">
+            Enter what you want to study or upload a PDF resume. The AI planner will create a 7-day roadmap with tasks, time estimates, progress tracking, and resources.
           </p>
 
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+            <label className="text-left">
+              <span className="block text-xs font-semibold text-surface-muted mb-1">Class</span>
+              <input
+                value={classLevel}
+                onChange={(e) => setClassLevel(e.target.value)}
+                className="w-full rounded-xl border border-surface-border bg-surface px-3 py-2 text-sm text-surface-text focus:outline-none focus:ring-2 focus:ring-primary-500/40"
+                placeholder="Class 12"
+              />
+            </label>
+            <label className="text-left">
+              <span className="block text-xs font-semibold text-surface-muted mb-1">Subject</span>
+              <input
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                className="w-full rounded-xl border border-surface-border bg-surface px-3 py-2 text-sm text-surface-text focus:outline-none focus:ring-2 focus:ring-primary-500/40"
+                placeholder="Biology"
+              />
+            </label>
+            <label className="text-left sm:col-span-1">
+              <span className="block text-xs font-semibold text-surface-muted mb-1">Daily Time</span>
+              <input
+                value={dailyTime}
+                onChange={(e) => setDailyTime(e.target.value)}
+                className="w-full rounded-xl border border-surface-border bg-surface px-3 py-2 text-sm text-surface-text focus:outline-none focus:ring-2 focus:ring-primary-500/40"
+                placeholder="60-90 minutes"
+              />
+            </label>
+          </div>
+
+          <textarea
+            value={studyGoal}
+            onChange={(e) => setStudyGoal(e.target.value)}
+            className="w-full min-h-24 rounded-xl border border-surface-border bg-surface px-4 py-3 text-sm text-surface-text placeholder:text-surface-muted/60 focus:outline-none focus:ring-2 focus:ring-primary-500/40 mb-5"
+            placeholder="Example: I want to learn Class 12 Biology, especially genetics and biotechnology, for board exams."
+          />
+
+          <button
+            onClick={generatePlan}
+            disabled={generating || !isOnline || !studyGoal.trim()}
+            className="btn-primary px-6 py-3 rounded-xl font-semibold flex items-center gap-2 mx-auto mb-8
+              bg-accent-teal text-white hover:bg-accent-teal/90 transition-all disabled:opacity-50
+              shadow-glow-teal"
+          >
+            {generating ? (
+              <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+            ) : (
+              <Sparkles className="w-4 h-4" />
+            )}
+            {generating ? 'Generating…' : 'Generate AI Study Plan'}
+          </button>
+
           {/* Upload button */}
-          <div className="relative inline-block mb-4">
+          <div className="relative inline-block mb-4 left-1/2 -translate-x-1/2">
             <input
               type="file"
               accept=".pdf"

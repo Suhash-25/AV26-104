@@ -126,10 +126,13 @@ export async function syncLocalUserToBackend(student) {
     const hasCurrentPin = Boolean(student.pin)
     
     let res = null
-    try {
-      res = await authClient.post('/auth/login', { email, password })
-    } catch (e) {
-      // Login failed, try register
+    for (const password of passwords) {
+      try {
+        res = await authClient.post('/auth/login', { email, password })
+        if (res.data?.success) break
+      } catch (e) {
+        // Login failed, try next candidate or register below.
+      }
     }
 
     if (!hasCurrentPin) return
@@ -139,7 +142,7 @@ export async function syncLocalUserToBackend(student) {
       res = await authClient.post('/auth/register', {
         name: student.name,
         email: email,
-        password: password,
+        password: String(student.pin),
         role: 'student',
         local_id: student.id,
         usn: email

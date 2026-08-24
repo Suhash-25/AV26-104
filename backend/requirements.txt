@@ -18,6 +18,7 @@ openpyxl
 PyPDF2
 apscheduler
 google-generativeai
+groq
 ddgs
 pydantic-settings
 httpx

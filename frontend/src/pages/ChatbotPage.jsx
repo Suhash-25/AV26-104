@@ -20,6 +20,20 @@ import ChatInput from './chatbot/ChatInput'
 // ─── Config ───────────────────────────────────────────────────────────────────
 const CHAT_ENDPOINT = '/agent/chat'
 
+function getChatResponseText(payload, fallback = 'How can I help you?') {
+  const data = payload?.data || payload || {}
+  return [
+    data.response,
+    data.next_question,
+    data.message,
+    data.detail,
+  ].filter(Boolean).join('\n\n') || fallback
+}
+
+function getBrowserSpeechLang(language) {
+  return ({ en: 'en-IN', hi: 'hi-IN', kn: 'kn-IN' })[language] || 'en-IN'
+}
+
 // ─── Intent classification ────────────────────────────────────────────────────
 const TASK_KEYWORDS = [
   'analyze','recommend','suggest','assess',
@@ -281,6 +295,7 @@ export default function ChatbotPage() {
     console.log('[voice:tts] stop requested')
     speechAbortRef.current?.abort()
     speechAbortRef.current = null
+    window.speechSynthesis?.cancel()
     if (speechAudioRef.current) {
       speechAudioRef.current.pause()
       URL.revokeObjectURL(speechAudioRef.current.src)
@@ -333,6 +348,15 @@ export default function ChatbotPage() {
     } catch (err) {
       if (err.name !== 'AbortError') {
         console.warn('[voice:tts] failed:', err)
+        if ('speechSynthesis' in window) {
+          const utterance = new SpeechSynthesisUtterance(text)
+          utterance.lang = getBrowserSpeechLang(language)
+          utterance.onend = () => setSpeaking(false)
+          utterance.onerror = () => setSpeaking(false)
+          window.speechSynthesis.cancel()
+          window.speechSynthesis.speak(utterance)
+          return
+        }
       }
       setSpeaking(false)
     }
@@ -583,7 +607,7 @@ export default function ChatbotPage() {
         if (data.progress_record) await saveProgressEvent(data.progress_record)
         setMessages(prev => [...prev, {
           role: 'assistant',
-          text: [data.response, data.next_question].filter(Boolean).join('\n\n'),
+          text: getChatResponseText(payload, 'Teacher assistant is ready. What would you like to study?'),
           agent_flow: data.agent_flow || [],
           pipeline_done: true,
           time: now,
@@ -610,7 +634,7 @@ export default function ChatbotPage() {
         const data = await res.json()
         setMessages(prev => [...prev, {
           role: 'assistant',
-          text: data?.data?.response || 'How can I help you?',
+          text: getChatResponseText(data),
           agent_flow: [],
           pipeline_done: true,
           time: now,
@@ -717,7 +741,7 @@ export default function ChatbotPage() {
             body: JSON.stringify({ message: text, student_id: currentStudent?.id }),
           })
           const fallbackData = await fallbackRes.json()
-          const fallbackText = fallbackData?.data?.response || 'How can I help you with your studies?'
+          const fallbackText = getChatResponseText(fallbackData, 'How can I help you with your studies?')
           setMessages(prev => {
             const copy = [...prev]
             const lastIdx = copy.findLastIndex(m => m.role === 'assistant' && m.pipeline_done === false)
